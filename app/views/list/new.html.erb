@@ -1,0 +1,15 @@
+
+<h2>Pleae fill below order</h2>
+<%- form_tag '/list', :method => 'get' do %>
+ <p>
+   Name:
+   <%= text_field_tag "name" %>
+ </p>
+ <p>
+   Price:
+   <%= text_field_tag "price" %>
+ </p>
+ <p>
+   <%= submit_tag 'Place Order' %>
+ </p>
+<% end %>

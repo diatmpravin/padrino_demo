@@ -1,0 +1,17 @@
+<h1>Below are the orders</h1>
+<table>
+	<tr>
+		<td>Sl. No.</td>
+		<td>Name</td>
+		<td>Price</td>
+	</tr>
+	<% sl = 0 %>
+	<% @orders.each do |order| %>
+		<tr>
+			<td><%= sl+=1 %> </td>
+			<td><%= order.name %></td>
+			<td><%= order.price%></td>
+		</tr>
+	<%end%>
+</table>
+<%= link_to "Place new order", url_for(:list, :new) %>

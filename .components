@@ -1,0 +1,9 @@
+---
+:orm: activerecord
+:test: none
+:mock: none
+:script: none
+:renderer: erb
+:stylesheet: none
+:namespace: Cast
+:migration_format: number
